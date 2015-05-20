@@ -1,0 +1,32 @@
+<!ENTITY  eveStatusStatBar.label        "Loading ...">
+<!ENTITY  eveStatusRefChaStat.label     "Refresh Character Status">
+<!ENTITY  eveStatusOnline.label         "Enable">
+<!ENTITY  eveStatusSettings.label       "Settings">
+<!ENTITY  eveStatusSound.label          "Sound">
+<!ENTITY  eveStatusProfiles.label       "Profiles">
+<!ENTITY  eveStatusLinks.label          "Links">
+<!ENTITY  eveStatusAbout.label          "About">
+<!ENTITY  eveStatusSettingsWindow.title "Settings - Eve Online Character Status">
+<!ENTITY  eveStatusButtonlabelAccept    "OK">
+<!ENTITY  eveStatusButtonlabelCancel    "Cancel">
+<!ENTITY  eveStatusUserID               "User ID:">
+<!ENTITY  eveStatusLAPIKey              "Limited Access API Key">
+<!ENTITY  eveStatusGetUserIDAndAPI      "Get your User ID and API Key here:">
+<!ENTITY  eveStatusAddUser.label        "Add User">
+<!ENTITY  eveStatusRemoveUser.label     "Remove User">
+<!ENTITY  eveStatusSetChange.label      "Set Change">
+<!ENTITY  eveStatusLoadCha.label        "Load Characters">
+<!ENTITY  eveStatusPickACha.label       "Pick a Character">
+<!ENTITY  eveStatusDispSettings.label   "Display Settings">
+<!ENTITY  eveStatusShowChaName.label    "Show Character Name">
+<!ENTITY  eveStatusShowSkillName.label  "Show Skill Name">
+<!ENTITY  eveStatusShowEEDate.label     "Show Exact End Date">
+<!ENTITY  eveStatusSyncSettings.label   "Synchronization Settings">
+<!ENTITY  eveStatusSyncText             "Synchronize with EVE Api Server on :">
+<!ENTITY  eveStatusSyncTime             "Minutes">
+<!ENTITY  eveStatusOfficialWeb          "Eve Online Character Status Official Website">
+<!ENTITY  eveStatusOnFireFox            "Eve Online Character Status Firefox Website">
+<!ENTITY  eveStatusEveOnline            "Eve Online Website">
+<!ENTITY  eveStatusEveOnlineForum       "Eve Online Forum">
+<!ENTITY  eveStatusEveOnlineAcc         "Eve Online Account Page">
+<!ENTITY  eveStatusMadeBy               "by George Filipov with great help from George Avramov.">

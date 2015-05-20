@@ -1,0 +1,34 @@
+<!ENTITY  eveStatusStatBar.label        "Зареждане ...">
+<!ENTITY  eveStatusRefChaStat.label     "Обнови състоянието на героя">
+<!ENTITY  eveStatusOnline.label         "Включи/Изключи">
+<!ENTITY  eveStatusSettings.label       "Настройки">
+<!ENTITY  eveStatusSound.label          "Звук">
+<!ENTITY  eveStatusProfiles.label       "Профили">
+<!ENTITY  eveStatusLinks.label          "Връзки">
+<!ENTITY  eveStatusAbout.label          "Относно">
+<!ENTITY  eveStatusSettingsWindow.title "Настройки - Eve Online Character Status">
+<!ENTITY  eveStatusButtonlabelAccept    "ОК">
+<!ENTITY  eveStatusButtonlabelCancel    "Отказ">
+<!ENTITY  eveStatusUserID               "Потребителски номер (User ID)">
+<!ENTITY  eveStatusLAPIKey              "Ограничен API Key">
+<!ENTITY  eveStatusGetUserIDAndAPI      "Вземете вашия потребителски номер и API Key:">
+<!ENTITY  eveStatusAddUser.label        "Добави Потребител">
+<!ENTITY  eveStatusRemoveUser.label     "Изтри Потребител">
+<!ENTITY  eveStatusSetChange.label      "Потвърди промените">
+<!ENTITY  eveStatusLoadCha.label        "Зареди героите">
+<!ENTITY  eveStatusPickACha.label       "Избери герои">
+<!ENTITY  eveStatusDispSettings.label   "Екрани настройки">
+<!ENTITY  eveStatusShowChaName.label    "Покажи името на героя">
+<!ENTITY  eveStatusShowSkillName.label  "Покажи името на умението (Skill)">
+<!ENTITY  eveStatusShowEEDate.label     "Покажи точна дата на свъшване">
+<!ENTITY  eveStatusSyncSettings.label   "Настройки за синхронизация">
+<!ENTITY  eveStatusSyncText             "Синхронизиране със EVE API сървъра на :">
+<!ENTITY  eveStatusSyncTime             "Минути">
+<!ENTITY  eveStatusOfficialWeb          "Официална интернет страница на Eve Online Character Status">
+<!ENTITY  eveStatusOnFireFox            "Eve Online Character Status в сайта на Firefox">
+<!ENTITY  eveStatusEveOnline            "Интернет страница на Eve Online">
+<!ENTITY  eveStatusEveOnlineForum       "Форум на Eve Online">
+<!ENTITY  eveStatusEveOnlineAcc         "Eve Online Потребителска страница (Account Page)">
+<!ENTITY  eveStatusMadeBy               "От Георги Филипов с голяма помощ от Георги Аврамов.">
+
+

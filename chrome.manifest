@@ -1,0 +1,8 @@
+content	evestats	content/
+
+overlay	chrome://browser/content/browser.xul	chrome://evestats/content/evestatusOverlay.xul
+
+
+
+locale	evestats	en-US	locale/en-US/evestats
+locale	evestats	bg-BG	locale/bg-BG/evestats

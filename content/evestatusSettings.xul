@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dialog SYSTEM "chrome://evestats/locale/evestats.dtd">
+
+<dialog id="EveStatsSettings" style="background-color:#fff;" title="&eveStatusSettingsWindow.title;"
+  ondialogaccept="return eveStatusSetSettings()"
+  flex="1"
+  width="600"
+  height="550"
+  persist="screenX screenY"
+  buttons="accept,cancel"
+  buttonlabelaccept="&eveStatusButtonlabelAccept;"
+  buttonlabelcancel="&eveStatusButtonlabelCancel;"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
+    <stringbundleset>
+        <stringbundle id="eveStatusProperties" src="chrome://evestats/locale/evestats.properties" />
+    </stringbundleset>
+    
+    <script type="application/x-javascript" src="chrome://evestats/content/evestatusSettings.js" ></script>
+    
+	<tabbox id="mainTabbox" flex="1" >
+		<tabs>
+			<tab style="font-family: arial; font-size:12px;" label="&eveStatusProfiles.label;"/>
+			<tab style="font-family: arial; font-size:12px;" label="&eveStatusSettings.label;"/>
+			<tab style="font-family: arial; font-size:12px;" label="&eveStatusLinks.label;"/>
+			<tab style="font-family: arial; font-size:12px;" label="&eveStatusAbout.label;"/>
+		</tabs>
+		<tabpanels flex="1">
+			<tabpanel flex="1" width="600px">
+				<vbox>
+					<hbox>
+						<label style="font-family: arial; font-size:12px;" value="&eveStatusUserID;" />
+						<textbox style="width:80px; font-family: arial; font-size:10px;" id="evestatususerid"/>
+					</hbox>
+					
+					<label style="font-family: arial; font-size:12px;" value="&eveStatusLAPIKey;" />
+					<textbox style="width:550px; font-family: arial; font-size:10px;" id="evestatusapikey"/>
+					
+					<label style="font-family: arial; font-size:12px;" value="&eveStatusGetUserIDAndAPI;" />
+					<label style="cursor: pointer; text-decoration:underline; color:#005177;"
+					tooltiptext="&eveStatusGetUserIDAndAPI;"
+					onclick="eveStatusGotoURL('http://myeve.eve-online.com/api/default.asp')"
+					>http://myeve.eve-online.com/api/default.asp</label>
+					
+					<grid flex="1">
+						<columns>
+							<column flex="1"/>
+							<column />
+						</columns>
+						<rows>
+							<row>
+								<listbox id="evestatuscharacterlist" seltype="single" onselect="eveStatusSetSelected(this)" rows="7">
+									<listitem label="" value="-1,-1,null" />
+								</listbox>
+								<vbox>
+                                    <button style="font-family: arial; font-size:12px;" label="&eveStatusAddUser.label;" oncommand="eveStatusAddUser()" />
+                                    <button style="font-family: arial; font-size:12px;" id="btnRemove" label="&eveStatusRemoveUser.label;" oncommand="eveStatusRemoveUser()" />
+                                    <button style="font-family: arial; font-size:12px;" id="btnChange" label="&eveStatusSetChange.label;" oncommand="eveStatusSetChange()" />
+								</vbox>
+							</row>
+							<row>
+								<hbox width="80">
+									<button style="font-family: arial; font-size:12px;" label="&eveStatusLoadCha.label;" oncommand="eveStatusGetCharacters()" />
+								</hbox>
+							</row>
+							<row>
+								<label style="font-family: arial; font-size:12px;" value="&eveStatusPickACha.label;" />
+							</row>
+							<row>
+								<menulist style="font-family: arial; font-size:12px;" id="evestatuscharacterid" flex="1">
+									<menupopup>
+									</menupopup>
+								</menulist>
+							</row>
+						</rows>
+					</grid>
+                    <hbox width="74" height="21">
+                        <image alt="Donate" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" style="cursor: pointer;" onclick="eveStatusGotoURL(-1);" />
+                    </hbox>
+				</vbox>
+			</tabpanel>
+			<tabpanel flex="1" width="600">
+				<vbox>
+				<groupbox style="font-family: arial; font-size:12px;">
+					<caption label="&eveStatusDispSettings.label;"/>
+					<checkbox id="cndisplay" style="font-family: arial; font-size:12px;" label="&eveStatusShowChaName.label;" />
+					<checkbox id="sndisplay" style="font-family: arial; font-size:12px;" label="&eveStatusShowSkillName.label;" />
+					<checkbox id="eddisplay" style="font-family: arial; font-size:12px;" label="&eveStatusShowEEDate.label;" />
+				</groupbox>
+				<groupbox style="font-family: arial; font-size:12px;">
+					<caption label="&eveStatusSyncSettings.label;"/>
+					<label>&eveStatusSyncText;<textbox style="width:80px; font-family: arial; font-size:10px;" id="evestatussyncid"/> &eveStatusSyncTime;</label>
+				</groupbox>
+				</vbox>
+			</tabpanel>
+			<tabpanel flex="1" width="600">
+				<vbox>
+					<label style="cursor: pointer; text-decoration:underline; color:#005177;"
+					tooltiptext="http://evestatus.ath.cx/"
+					onclick="eveStatusGotoURL('http://evestatus.ath.cx/')"
+					>&eveStatusOfficialWeb;</label>
+					<label style="cursor: pointer; text-decoration:underline; color:#005177;"
+					tooltiptext="https://addons.mozilla.org/en-US/firefox/addon/8132"
+					onclick="eveStatusGotoURL('https://addons.mozilla.org/en-US/firefox/addon/8132')"
+					>&eveStatusOnFireFox;</label>
+					<label style="cursor: pointer; text-decoration:underline; color:#005177;"
+					tooltiptext="http://www.eve-online.com/"
+					onclick="eveStatusGotoURL('http://www.eve-online.com/')"
+					>&eveStatusEveOnline;</label>
+					<label style="cursor: pointer; text-decoration:underline; color:#005177;"
+					tooltiptext="http://myeve.eve-online.com/ingameboard.asp"
+					onclick="eveStatusGotoURL('http://myeve.eve-online.com/ingameboard.asp')"
+					>&eveStatusEveOnlineForum;</label>
+					<label style="cursor: pointer; text-decoration:underline; color:#005177;"
+					tooltiptext="https://secure.eve-online.com/AccountManMenu.aspx"
+					onclick="eveStatusGotoURL('https://secure.eve-online.com/AccountManMenu.aspx')"
+					>&eveStatusEveOnlineAcc;</label>
+				</vbox>
+			</tabpanel>
+			<tabpanel flex="1">
+				<label style="font-family: arial; font-size:12px;" tooltiptext="&eveStatusMadeBy;"
+				>&eveStatusMadeBy;</label>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+</dialog>

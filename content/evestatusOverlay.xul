@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://evestats/locale/evestats.dtd">
+
+<overlay id="evestats-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    
+    <stringbundleset>
+        <stringbundle id="eveStatusProperties" src="chrome://evestats/locale/evestats.properties" />
+    </stringbundleset>
+    
+    <script type="application/x-javascript" src="chrome://evestats/content/evestatusTools.js" ></script>
+	<script type="application/x-javascript" src="chrome://evestats/content/evestatusOverlay.js" ></script>
+    
+	<statusbar id="status-bar">
+		<statusbarpanel id="evestats-panel" label="&eveStatusStatBar.label;" tooltiptext="" context="eveStatusMenu" />
+	</statusbar>
+ 
+	<popupset id="mainPopupSet">
+		<menupopup id="eveStatusMenu">
+			<menuitem label="&eveStatusRefChaStat.label;" oncommand="eveStatusInit()"/>
+			<menuseparator/>
+			<menuitem id="eveStatusStatusID" type="checkbox" label="&eveStatusOnline.label;" oncommand="eveStatusOnOff(this);"/>
+			<menuitem id="eveStatusSoundID" type="checkbox" label="&eveStatusSound.label;" oncommand="eveStatusSoundOnOff(this);"/>
+			<menuitem label="&eveStatusSettings.label;" oncommand="eveStatusSettingsWindow();"/>
+		</menupopup>
+	</popupset>
+    
+</overlay>
+
